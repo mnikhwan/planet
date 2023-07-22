@@ -1,0 +1,467 @@
+
+--------------------------------------
+*/
+.gg{
+    background-color: #0f0f0f;
+    height: 100vh;
+}
+.tengah .wrapper{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    perspective: 1000px;
+    perspective-origin: 60% 50%;
+    transform: rotate(-10deg);
+  }
+  .tengah .wrapper > div{
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    height: 0;
+  }
+  .tengah .sun{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 125px !important;
+  }
+  
+  .tengah .sun .star{
+    width: 250px;
+    height: 250px;
+    background: url(../../../public/image/planet-real/sun.png) no-repeat;
+    background-size: cover;
+    border-radius: 250px;
+    margin: 0 auto;
+    animation: spinsun 40s infinite linear;
+  }
+  .tengah .planet{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+  }
+  
+  .tengah .shadow{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent url(../../../public/image/planet-real/shadow.png) 0% 0% no-repeat;
+    background-size: cover;
+    border-radius: 100%; 
+  }
+  .tengah .murcury{
+    position: absolute;
+    width: 400px;
+    z-index: 2;
+    animation: orbitmurcury 12s infinite linear;
+    top: -7.5px; 
+  }
+  .tengah .murcury .planet{
+    width: 15px;
+    height: 15px;
+    background-image: url(../../../public/image/planet-real/mercury.png);
+    animation: anti-spin 12s infinite linear;
+  }
+  .tengah .murcury .shadow{
+    animation: shadow 12s infinite linear;
+  }
+  
+  .tengah .venus{
+    position: absolute;
+    width: 506px;
+    z-index: 3;
+    animation: orbitvenus 15s infinite linear;
+    top: -19px;
+  }
+  .tengah .venus .planet{
+    width: 38px;
+    height: 38px;
+    background-image: url(../../../public/image/planet-real/venus.png);
+    animation: anti-spin 15s infinite linear;
+  }
+  .tengah .venus .shadow{
+    animation: shadow 15s infinite linear;
+  }
+  .tengah .earth{
+    position: absolute;
+    width: 610px;
+    z-index: 4;
+    animation: orbitearth 20s infinite linear;
+    top: -20px;
+  }
+  .tengah .earth .planet{
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../public/image/planet-real/earth.png);
+    animation: anti-spin 20s infinite linear;
+  }
+  .tengah .earth .shadow{
+    animation: shadow 20s infinite linear;
+  }
+  .tengah .mars{
+    position: absolute;
+    width: 706px;
+    z-index: 5;
+    animation: orbitmars 30s infinite linear;
+    top: -11px;
+  }
+  .tengah .mars .planet{
+    width: 22px;
+    height: 22px;
+    background-image: url(../../../public/image/planet-real/mars.png);
+    animation: anti-spin 30s infinite linear;
+  }
+  .tengah .mars .shadow{
+    animation: shadow 30s infinite linear;
+  }
+  .tengah .jupiter{
+    position: absolute;
+    width: 1100px;
+    z-index: 6;
+    animation: orbitjupiter 50s infinite linear;
+    top: -64px;
+  }
+  
+  .tengah .jupiter .planet{
+    width: 128px;
+    height: 128px;
+    background-image: url(../../../public/image/planet-real/jupiter.png);
+    animation: anti-spin 50s infinite linear;
+  }
+  .tengah .jupiter .shadow{
+    animation: shadow 50s infinite linear;
+  }
+  
+  
+  @keyframes spinsun{
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes shadow{
+    0%{
+      background-position: 130% 0%;
+    }
+    33%{
+      background-position: 50% 0%;
+    }
+    55%{
+      background-position: 0% 0%;
+    }
+    80%{
+      background-position: -50% 0%;
+    }
+    100%{
+      background-position: -50% 0%;
+    }
+  }
+  @keyframes orbitmurcury{
+    0%{
+      z-index: 2;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 2;
+    }
+    50%{
+      z-index: -2;
+    }
+    99%{
+      z-index: -2;
+    }
+    100%{
+      z-index: 2;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes orbitvenus{
+    0%{
+      z-index: 3;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 3;
+    }
+    50%{
+      z-index: -3;
+    }
+    99%{
+      z-index: -3;
+    }
+    100%{
+      z-index: 3;
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes orbitearth{
+    0%{
+      z-index: 4;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 4;
+    }
+    50%{
+      z-index: -4;
+    }
+    99%{
+      z-index: -4;
+    }
+    100%{
+      z-index: 4;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes orbitmars{
+    0%{
+      z-index: 5;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 5;
+    }
+    50%{
+      z-index: -5;
+    }
+    99%{
+      z-index: -5;
+    }
+    100%{
+      z-index: 5;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes orbitjupiter{
+    0%{
+      z-index: 6;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 6;
+    }
+    50%{
+      z-index: -6;
+    }
+    99%{
+      z-index: -6;
+    }
+    100%{
+      z-index: 6;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes anti-spin{
+    form{
+      transform: rotateY(0);
+    }
+    to{
+      transform: rotateY(-360deg);
+    }
+  }
+  @keyframes anti-spin-rings{
+    form{
+      transform: rotateY(0) rotateX(73deg);
+    }
+    to{
+      transform: rotateY(-360deg) rotateX(73deg);
+    }
+  }
+
+
+  .bawah{
+    bottom: 0;
+    z-index: 20;
+    position: fixed;
+    height:19rem;
+    width: 100vw;
+    padding: 1.5rem;
+    background-color: var(--whitebg);
+}
+.bawah .desk{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: justify;
+    text-indent: 4rem;
+    width: 80vw;
+}
+.bawah .cntr{
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+      z-index: 20;
+      display: flex;
+      padding-left: 2rem;
+      padding-right: 5rem;
+      justify-content: space-between;
+}
+.bawah .cntr .ccard{
+    z-index: 20;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+.bawah .cntr .ccard:hover{
+    z-index: 20;
+    scale: 1.1;
+}
+.bawah .cntr .ccard p{
+    color: var(--colorpurple);
+    font-weight: 600;
+      margin-top: 0.5rem;
+}
+.bawah .cntr .ccard img{
+      z-index: 20;
+    width: 100px;
+}
+.kembali{
+    background-color: var(--colorpurple);
+    color: var(--txtwhite);
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.kembali:hover{
+    background-color: var(--colorpurple);
+    color: var(--txtwhite);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-decoration: none;
+    
+}
+
+.hide{
+    display: none;
+}
+
+/* uhuhuuhuhuh */
+.atas{
+    top: 0;
+    bottom: 0;
+    z-index: 25;
+    position: fixed;
+    height:100vh;
+    width: 85vw;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 20rem;
+    padding-bottom: 5rem;
+    
+    background-color: var(--whitebg);
+}
+.atas .card{
+    margin-bottom: 2rem;
+    display: flex;
+    background-color: antiquewhite;
+    color: var(--txtblack);
+    border-radius: 30px;
+}
+.atas .card .kanan{
+    width: 30rem;
+    padding: 4rem;
+}
+.atas .card .kanan p{  
+    margin-top: 2rem;
+    text-align: justify;
+    text-indent: 4rem;
+}
+#sun .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/sun.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mercury .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/Mercury.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#venus .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/venus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#earth .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/earth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mars .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/mars.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jupiter .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/jupiter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#saturn .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/saturn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#uranus .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/uranus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#neptune .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('../../../public/image/real/neptune.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

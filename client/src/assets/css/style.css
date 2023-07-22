@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva:400|Mochiy+Pop+One:400');
+
+.desktop {
+  margin-top: 3.5rem;
+  background-color: #05101e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+/* yang membungkus Main Section */
+.desktop .overlap {
+  width: 100vw;
+  margin-top: 7rem;
+}
+
+
+.desktop .stars-background {
+  height: 566px;
+  left: 0;
+  position: absolute;
+  top: 26px;
+  width: 1280px;
+}
+
+.desktop .rocket-inject {
+  height: 161px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 249px;
+}
+
+.desktop .main {
+  height: 535px;
+  left: 26px;
+  position: absolute;
+  top: 0;
+  width: 1228px;
+}
+
+.desktop .galaxy {
+  height: 535px;
+  left: 582px;
+  position: absolute;
+  top: 0;
+  width: 646px;
+}
+
+.desktop .main-TEXT {
+  height: 293px;
+  left: 102px;
+  position: absolute;
+  top: 165px;
+  width: 427px;
+}
+
+.desktop .flex-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 155px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .text {
+  color: #ffffff;
+  font-family: "Mansalva", Helvetica !important;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 3.8rem;
+  position: relative;
+}
+
+.desktop .text-wrapper {
+  color: #ffffff;
+  font-family: "Mansalva", Helvetica !important;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.desktop .span-wrapper {
+  color: #ffffff;
+  font-family: "Mansalva", Helvetica !important;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  
+}
+
+.desktop .button {
+  height: 51px;
+  left: 0;
+  position: absolute;
+  top: 242px;
+  width: 199px;
+}
+
+
+.desktop .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", Helvetica !important;
+  font-size: 28px;
+  font-weight: 400;
+  left: 48px;
+  letter-spacing: 2.1px;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+}
+
+.navigasi {
+  background-color: #2a2f4f66;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+  height: 100px;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  width: 100vw;
+}
+
+.h-1 {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", Helvetica !important;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal
+}
+
+.navigasi .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", Helvetica !important;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: row;
+  line-height: normal;
+}
+.navigasi .text-wrapper-3 .b-link{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+form{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color: #212121;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+form label{
+  display: flex;
+}
+form input{
+ margin-bottom: 0.3rem;
+}
+form button{
+  margin-top: 0.7rem;
+}
+form h3{
+  padding: 0;
+  margin: 0;
+}

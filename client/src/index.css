@@ -1,0 +1,790 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css?family=Mansalva:400|Mochiy+Pop+One:400');
+:root{
+ 
+  --txtblack:#151515;
+  --txtwhite:#fff;
+  --whitebg:#DDDDDD;
+  --colorpurple:#8758FF;
+  --colorwhite:#F2F2F2;
+  --colorblue:#5CB8E4;
+  --gradispace:radial-gradient(ellipse at bottom, #242424 0%, #0f0f0f 100%);
+}
+body {
+  margin: 0;
+  background-color: #05101e;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav .navigasi .text-wrapper-3 .b-link a{
+  color: #fff!important;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav .navigasi .text-wrapper-3 .b-link a:hover{
+  color: #ccc!important;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+.desktop {
+  margin-top: 3.5rem;
+  background-color: #05101e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+/* yang membungkus Main Section */
+.desktop .overlap {
+  width: 100vw;
+  margin-top: 7rem;
+}
+
+
+.desktop .stars-background {
+  height: 566px;
+  left: 0;
+  position: absolute;
+  top: 26px;
+  width: 1280px;
+}
+
+.desktop .rocket-inject {
+  height: 161px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 249px;
+}
+
+
+.desktop .main {
+  z-index: 3 !important;
+  height: 535px;
+  left: 26px;
+  position: absolute;
+  top: 0;
+  width: 1228px;
+}
+
+.desktop .galaxy {
+  height: 535px;
+  left: 582px;
+  position: absolute;
+  top: 0;
+  width: 646px;
+}
+
+.desktop .main-TEXT {
+  height: 293px;
+  left: 102px;
+  position: absolute;
+  top: 165px;
+  width: 427px;
+}
+
+.desktop .flex-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 155px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .text {
+  color: #ffffff;
+  font-family: "Mansalva", Helvetica !important;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 3.8rem;
+  position: relative;
+}
+
+.desktop .text-wrapper {
+  color: #ffffff;
+  font-family: "Mansalva", Helvetica !important;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.desktop .span-wrapper {
+  color: #ffffff;
+  font-family: "Mansalva", Helvetica !important;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  
+}
+a button{
+  z-index: 10!important;
+  cursor: pointer;
+}
+
+.desktop .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", Helvetica !important;
+  font-size: 28px;
+  font-weight: 400;
+  left: 48px;
+  letter-spacing: 2.1px;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+}
+
+.navigasi {
+  background-color: #2a2f4f66;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+  border-radius: 0px 0px 30px 30px;
+  height: 100px;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  width: 100vw;
+}
+
+.h-1 {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", Helvetica !important;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal
+}
+
+.navigasi .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", Helvetica !important;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: row;
+  line-height: normal;
+}
+.navigasi .text-wrapper-3 .b-link{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+form{
+  position: static;
+  z-index: 20 !important;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color: #212121;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+form label{
+  display: flex;
+}
+form input{
+ margin-bottom: 0.3rem;
+}
+form button{
+  margin-top: 0.7rem;
+}
+form h3{
+  padding: 0;
+  margin: 0;
+}
+
+table{
+  position: static;
+  z-index: 20 !important;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color: #212121;
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-height: 17rem;
+}
+table:first-of-type{
+  position: static;
+  z-index: 20 !important;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color: #212121;
+  padding: 1.5rem;
+  border-radius: 15px;
+  min-width: 30rem;
+  min-height: 25rem;
+}
+table button{
+  margin-top: 0.7rem;
+}
+table h4{
+  padding: 0;
+  margin: 0;
+}
+
+.stars-backgrounds {
+  z-index: 2 !important;
+  height: 566px;
+  left: 0;
+  position: absolute;
+  top: 26px;
+  width: 1280px;
+  /* webkit-animation: fadein 2.5s ease-in alternate infinite; */
+    -moz-animation: fadein 2.5s ease-in alternate infinite;
+    animation: fadein 2.5s ease-in alternate infinite;
+}
+
+ .rocket-injects {
+  z-index: 2 !important;
+  height: 161px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 249px;
+}
+ .rocket-injectfloat {
+  z-index: 2 !important;
+  height: 161px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 249px;
+  -moz-animation: floating 5s ease-in-out alternate infinite;
+    animation: floating 5s ease-in-out alternate infinite;
+}
+@keyframes floating {
+  0% { transform: translateY(0px) translateX(0px) rotate(0); }
+  50%  { transform: translateY(25px) translateX(20px) rotate(10deg); }
+  100%   { transform: translateY(-0px) translateX(0px) rotate(0); }   
+}
+
+@keyframes fadein {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+/* ................................ */
+
+/* -------------------------------------- */
+*/
+.gg{
+    background-color: #0f0f0f;
+    height: 100vh;
+}
+.tengah .wrapper{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    perspective: 1000px;
+    perspective-origin: 60% 50%;
+    transform: rotate(-10deg);
+  }
+  .tengah .wrapper > div{
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    height: 0;
+  }
+  .tengah .sun{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 125px !important;
+  }
+  
+  .tengah .sun .star{
+    width: 250px;
+    height: 250px;
+    background: url('./assets/image/planet-real/sun.png') no-repeat;
+    background-size: cover;
+    border-radius: 250px;
+    margin: 0 auto;
+    animation: spinsun 40s infinite linear;
+  }
+  .tengah .planet{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+  }
+  
+  .tengah .shadow{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent url('./assets/image/planet-real/shadow.png') 0% 0% no-repeat;
+    background-size: cover;
+    border-radius: 100%; 
+  }
+  .tengah .murcury{
+    position: absolute;
+    width: 400px;
+    z-index: 2;
+    animation: orbitmurcury 12s infinite linear;
+    top: -7.5px; 
+  }
+  .tengah .murcury .planet{
+    width: 15px;
+    height: 15px;
+    background-image: url('./assets/image/planet-real/mercury.png');
+    animation: anti-spin 12s infinite linear;
+  }
+  .tengah .murcury .shadow{
+    animation: shadow 12s infinite linear;
+  }
+  
+  .tengah .venus{
+    position: absolute;
+    width: 506px;
+    z-index: 3;
+    animation: orbitvenus 15s infinite linear;
+    top: -19px;
+  }
+  .tengah .venus .planet{
+    width: 38px;
+    height: 38px;
+    background-image: url('./assets/image/planet-real/venus.png');
+    animation: anti-spin 15s infinite linear;
+  }
+  .tengah .venus .shadow{
+    animation: shadow 15s infinite linear;
+  }
+  .tengah .earth{
+    position: absolute;
+    width: 610px;
+    z-index: 4;
+    animation: orbitearth 20s infinite linear;
+    top: -20px;
+  }
+  .tengah .earth .planet{
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/image/planet-real/earth.png');
+    animation: anti-spin 20s infinite linear;
+  }
+  .tengah .earth .shadow{
+    animation: shadow 20s infinite linear;
+  }
+  .tengah .mars{
+    position: absolute;
+    width: 706px;
+    z-index: 5;
+    animation: orbitmars 30s infinite linear;
+    top: -11px;
+  }
+  .tengah .mars .planet{
+    width: 22px;
+    height: 22px;
+    background-image: url('./assets/image/planet-real/mars.png');
+    animation: anti-spin 30s infinite linear;
+  }
+  .tengah .mars .shadow{
+    animation: shadow 30s infinite linear;
+  }
+  .tengah .jupiter{
+    position: absolute;
+    width: 1100px;
+    z-index: 6;
+    animation: orbitjupiter 50s infinite linear;
+    top: -64px;
+  }
+  
+  .tengah .jupiter .planet{
+    width: 128px;
+    height: 128px;
+    background-image: url('./assets/image/planet-real/jupiter.png');
+    animation: anti-spin 50s infinite linear;
+  }
+  .tengah .jupiter .shadow{
+    animation: shadow 50s infinite linear;
+  }
+  
+  
+  @keyframes spinsun{
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes shadow{
+    0%{
+      background-position: 130% 0%;
+    }
+    33%{
+      background-position: 50% 0%;
+    }
+    55%{
+      background-position: 0% 0%;
+    }
+    80%{
+      background-position: -50% 0%;
+    }
+    100%{
+      background-position: -50% 0%;
+    }
+  }
+  @keyframes orbitmurcury{
+    0%{
+      z-index: 2;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 2;
+    }
+    50%{
+      z-index: -2;
+    }
+    99%{
+      z-index: -2;
+    }
+    100%{
+      z-index: 2;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes orbitvenus{
+    0%{
+      z-index: 3;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 3;
+    }
+    50%{
+      z-index: -3;
+    }
+    99%{
+      z-index: -3;
+    }
+    100%{
+      z-index: 3;
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes orbitearth{
+    0%{
+      z-index: 4;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 4;
+    }
+    50%{
+      z-index: -4;
+    }
+    99%{
+      z-index: -4;
+    }
+    100%{
+      z-index: 4;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes orbitmars{
+    0%{
+      z-index: 5;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 5;
+    }
+    50%{
+      z-index: -5;
+    }
+    99%{
+      z-index: -5;
+    }
+    100%{
+      z-index: 5;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes orbitjupiter{
+    0%{
+      z-index: 6;
+      transform: rotateY(0);
+    }
+    49%{
+      z-index: 6;
+    }
+    50%{
+      z-index: -6;
+    }
+    99%{
+      z-index: -6;
+    }
+    100%{
+      z-index: 6;
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes anti-spin{
+    form{
+      transform: rotateY(0);
+    }
+    to{
+      transform: rotateY(-360deg);
+    }
+  }
+  @keyframes anti-spin-rings{
+    form{
+      transform: rotateY(0) rotateX(73deg);
+    }
+    to{
+      transform: rotateY(-360deg) rotateX(73deg);
+    }
+  }
+
+
+  .bawah{
+    bottom: 0;
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:19rem;
+    width: 100vw;
+    padding: 1.5rem;
+    /* background-color: var(--whitebg); */
+}
+.bawah .desk{
+  line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 15px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: justify;
+    text-indent: 4rem;
+    background-color: #2a2f4f66;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+    color: var(--colorwhite);
+    backdrop-filter: blur(3px) ;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    width: 80vw;
+}
+.bawah .cntr{
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+      z-index: 20;
+      display: flex;
+      padding-left: 2rem;
+      padding-right: 5rem;
+      justify-content: space-between;
+}
+.bawah .cntr .ccard{
+    z-index: 20;
+    background-color: aliceblue;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+  
+  backdrop-filter: blur(3px) ;
+  border: 1px solid rgba(255, 255, 255, 0.459);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+.bawah .cntr .ccard:hover{
+    z-index: 20;
+    scale: 1.1;
+}
+.bawah .cntr .ccard p{
+  color: var(--colorpurple);
+    font-weight: 600;
+      margin-top: 0.5rem;
+}
+.bawah .cntr .ccard img{
+      z-index: 20;
+    width: 100px;
+}
+.kembali{
+    background-color: var(--colorpurple);
+    color: var(--txtwhite);
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.kembali:hover{
+    background-color: var(--colorpurple);
+    color: var(--txtwhite);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-decoration: none;
+    
+}
+
+.hide{
+    display: none;
+}
+
+/* uhuhuuhuhuh */
+.atas{
+    top: 0;
+    bottom: 0;
+    z-index: 25;
+    position: fixed;
+    height:100vh;
+    width: 85vw;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 20rem;
+    padding-bottom: 5rem;
+    
+    background-color: var(--whitebg);
+}
+.atas .card{
+    margin-bottom: 2rem;
+    display: flex;
+    background-color: antiquewhite;
+    color: var(--txtblack);
+    border-radius: 30px;
+}
+.atas .card .kanan{
+    width: 30rem;
+    padding: 4rem;
+}
+.atas .card .kanan p{  
+    margin-top: 2rem;
+    text-align: justify;
+    text-indent: 4rem;
+}
+#sun .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/sun.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mercury .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/Mercury.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#venus .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/venus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#earth .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/earth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mars .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/mars.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jupiter .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/jupiter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#saturn .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/saturn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#uranus .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/uranus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#neptune .card .img{
+    border-radius: 30px 0 0 30px;
+    width: 35rem;
+    height: 30rem;
+    background-image: url('./assets/image/real/neptune.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
