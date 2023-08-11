@@ -648,7 +648,7 @@ table h4{
       margin-top: 0.5rem;
 }
 .bawah .cntr .ccard img{
-      z-index: 20;
+    z-index: 20;
     width: 100px;
 }
 .kembali{
@@ -688,12 +688,19 @@ table h4{
     padding-left: 6rem;
     padding-right: 20rem;
     padding-bottom: 5rem;
-    
-    background-color: var(--whitebg);
+    background-color: #11111166;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+    backdrop-filter: blur(3px) ;
+  
 }
 .atas .card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
     margin-bottom: 2rem;
     display: flex;
+    justify-content: center;
+
     background-color: antiquewhite;
     color: var(--txtblack);
     border-radius: 30px;
@@ -787,4 +794,197 @@ table h4{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* LATIHAN CSS */
+.lat-atas{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.lat-atas .deskk{
+  line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 15px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-align: justify;
+    text-indent: 4rem;
+    background-color: #2a2f4f66;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+    color: var(--colorwhite);
+    backdrop-filter: blur(3px) ;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    width: 50vw;
+}
+
+.lat-atas table{
+  position: static;
+  z-index: 20 !important;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  color: #212121;
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-height: 17rem;
+  width: 70vw;
+}
+.lat-atas table button{
+  margin-top: 0.7rem;
+}
+.lat-atas table h4{
+  padding: 0;
+  margin: 0;
+}
+.mainsoal{
+    position: static;
+    z-index: 20 !important;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: #212121;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 70vw;  
+}
+.mainsoals{
+    position: static;
+    z-index: 20 !important;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: #212121;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 70vw;  
+}
+.mainsoal .masuksoal{
+  display: flex;
+  flex-direction: column;   
+    justify-content: center; 
+    color: var(--txtblack);
+    font-size: 18px;
+}
+.mainsoal .masuksoal .no-soal{
+    color: var(--colorpurple);
+}
+.mainsoal .masuksoal .jawaban{
+  display: flex;
+  flex-direction: row;
+}
+.mainsoal .masuksoal .jawaban .selected {
+  background: var(--colorpurple) !important;
+  color: var(--colorwhite) !important;
+}
+
+.mainsoal .masuksoal .jawaban .options {
+  padding: 8px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  width:100%;
+  background-color: var(--colorwhite);
+  color: var(--colorpurple);
+  font-weight: bold;
+}
+
+.mainsoal .masuksoal ul {
+  list-style-type: none;
+}
+
+.mainsoal .masuksoal ul li {
+  margin: 5px;
+}
+.button-jwb{
+  border-radius: 10px;
+    background-color: #05101e;
+    border: 1px solid var(--colorpurple);
+    color: var(--whitebg);
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+}
+.button-jwb:hover{
+  border-radius: 10px;
+    background-color: #183050;
+    border: 1px solid var(--colorpurple);
+    color: var(--whitebg);
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+}
+.button-jwb:disabled{
+  border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid var(--colorpurple);
+    color: var(--whitebg);
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: not-allowed;
+}
+.btn-menu{
+  padding: 2rem 4rem 2rem 4rem;
+  
+  border: 1px solid rgba(255, 255, 255, 0.459);
+  border-radius: 0px 50px 0px 50px;
+  z-index: 10;
+  color: var(--whitebg);background: none;
+  transition: all 0.45s ease-in-out;
+  font-weight: 700;
+  font-size: medium;
+}
+.btn-menu:hover{
+  border-radius: 10px 50px 10px 50px;
+  color: black;
+  background-color: aliceblue;
+}
+.desktop .card{
+  background-color: #2a2f4f66;
+  box-shadow: 0px 4px 6px #0a0a0a40;
+    color: var(--colorwhite);
+    backdrop-filter: blur(3px) ;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+}
+.card tr td .desk{
+  line-height: 1.3rem;
+  font-size: 15px;
+}
+table .btn-submenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

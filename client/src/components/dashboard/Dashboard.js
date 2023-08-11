@@ -12,38 +12,51 @@ class Dashboard extends Component {
 
   render() {
     const { user } = this.props.auth;
-
+    
     return (
       <div className="desktop">
           <img className="stars-backgrounds" alt="Stars background" src="image/stars-background.png" />
           <img className="rocket-injectfloat" alt="Rocket inject" src="image/rocket-inject-1.png" />
           
-        <table>
+        <table className="card">
           <tr>
             <td>
-            <h4>
-              <b>Selamat datang,</b> {user.name}!
+            <h2>
+              Selamat datang, <b>{user.name}</b>!
               
-            </h4>
+            </h2>
+            <p className="desk">Dibawah ini adalah menu untuk menjelajah Tata Surya dalam aplikasi ini<span role={'img'}>🤗.</span><br/>Silahkan Klik salah satu untuk mulai menjelajah!</p>
             </td>
           </tr>
-          <tr>
+          <tr className="btn-submenu">
             <td>
             <h4>
             <Link to="/materi">
-              <button className="button">Materi</button>
+              <button className="button btn-menu">Materi</button>
               </Link>
             </h4>
             </td>
             <td>
             <h4>
-            <button>Games</button>
+            <Link to="/latihan">
+              <button className="button btn-menu">Latihan</button>
+              </Link>
             </h4>
             </td>
             <td>
             <h4>
-            <button>Peringkat</button>
+            <Link to="/peringkat">
+              <button className="button btn-menu">Peringkat</button>
+              </Link>
             </h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+            <Link to="/peringkat">
+              <button className="button btn-about">About App</button>
+              </Link>
             </td>
           </tr>
           
@@ -84,6 +97,7 @@ class Dashboard extends Component {
             </h4>
             </td>
           </tr>
+          
           
         </table>
 

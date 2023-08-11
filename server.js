@@ -31,6 +31,15 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
+const User = require("./models/User");
+app.use("/alluserdata", async (req, res) => {
+  try {
+    const alluser = await User.find({});
+    res.send({ status: "ok", data: alluser });
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {

@@ -23,6 +23,10 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
+  skorlatihan: {
+    type: Number,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,

@@ -42,6 +42,25 @@ export const loginUser = (userData) => (dispatch) => {
       })
     );
 };
+//Login - get user token
+export function SkorData()  {
+  axios
+    .post("/api/users/alluserdata", { crossdomain: true })
+    .then(res => {
+      return res.data;
+    })
+    
+  // return res.data; - = () => (dispatch) =>
+  // return a;
+  // const { token } = res.data;
+  // console.log(a);
+    // .catch((err) =>
+    //   dispatch({
+    //     type: GET_ERRORS,
+    //     payload: err.response.data,
+    //   })
+    // );
+};
 
 // Set logged in user
 export const setCurrentUser = (decoded) => {

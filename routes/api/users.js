@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
-
+const app = express();
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
@@ -35,6 +35,7 @@ router.post("/register", (req, res) => {
         sekolah: req.body.sekolah,
         email: req.body.email,
         password: req.body.password,
+        skorlatihan: 0,
       });
 
       // Hash password before saving in database
@@ -51,6 +52,21 @@ router.post("/register", (req, res) => {
     }
   });
 });
+
+// @route POST api/users/Alluserdata
+// @desc Login user and return JWT token
+// @access Public
+router.post("/alluserdata", async (req, res) => {
+  try {
+    const alluser = await User.find({});
+    console.log(alluser);
+    res.send({ status: "ok", data: alluser });
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+
 
 // @route POST api/users/login
 // @desc Login user and return JWT token
@@ -72,7 +88,7 @@ router.post("/login", (req, res) => {
   User.findOne({ nisn, email }).then((user) => {
     // Check if user exists
     if (!user.nisn) {
-      return res.status(404).json({ nisnnotfound: "Email not found" });
+      return res.status(404).json({ nisnnotfound: "Nisn not found" });
     }
     if (!user.email) {
       return res.status(404).json({ emailnotfound: "Email not found" });
@@ -89,6 +105,7 @@ router.post("/login", (req, res) => {
           nisn: user.nisn,
           sekolah: user.sekolah,
           email: user.email,
+          skorlatihan: user.skorlatihan,
         };
 
         // Sign token

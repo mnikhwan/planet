@@ -12,6 +12,8 @@ import Register from "./components/auth/Register";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import Materi from "./components/materi/materi";
+import Latihan from "./components/latihan/latihan";
+import Peringkat from "./components/peringkat/peringkat";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -49,6 +51,8 @@ function App() {
           <Switch>
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <PrivateRoute exact path="/materi" component={Materi} />
+            <PrivateRoute exact path="/latihan" component={Latihan} />
+            <PrivateRoute exact path="/peringkat" component={Peringkat} />
           </Switch>
         </div>
       </Router>
