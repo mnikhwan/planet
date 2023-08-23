@@ -15,7 +15,7 @@
     "mni-full": "export NODE_OPTIONS=--openssl-legacy-provider && npm i && npm run client-install && npm run build-prod",
     "mni-install": "export NODE_OPTIONS=--openssl-legacy-provider && npm i && npm run client-install",
     "mni-prod": "export NODE_OPTIONS=--openssl-legacy-provider && npm run prod",
-    "mni-build": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
+    "mni-build": "CI=false export NODE_OPTIONS=--openssl-legacy-provider && npm run build",
     "mni-build-launch": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build-prod"
   },
   "repository": {
